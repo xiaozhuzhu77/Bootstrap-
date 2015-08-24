@@ -39,7 +39,7 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 用以声明当前页面用chrome内核来渲染。
 复杂一些的就是本文一开始看到的那中用法：
 ```
-**`< meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />`**
+`< meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />`
 ```
 
 这样写可以达到的效果是如果安装了GCF，则使用GCF来渲染页面，如果为安装GCF，则使用最高版本的IE内核进行渲染。
