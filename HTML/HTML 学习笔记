@@ -5,39 +5,14 @@
 
 *注释：*元数据总是以名称/值的形式被成对传递的。
 ### 必须的属性###
-```
+
 属性| 值 | 描述
 -----------|-----------------------|-------------------
 content|	some_text	|定义与 http-equiv 或 name 属性相关的元信息
-```
-```
-First Header  | Second Header | Third Header
-------------------|-----------------------|-------------------
-**type** | **text**| **单行文本框**
-**type** |**password**|  **密码输入框**
-**type**|**hidden**|**隐藏域**
-**type**|**radio**|**单选框**
-**type**|**checkbox**|**多选框**
-**type**|**image**|**图像域**
-**type**|**file**|**文件上传域**
-**type**|**submit**|**提交**
-**type**|**reset**|**重设**
-**type**|**button**|**无动作按钮**
-```
+
 ###可选的属性###
 属性	|值|	描述
-http-equiv	|content-type
-expires
-refresh
-set-cookie
-|把 content 属性关联到 HTTP 头部。
-name	|
-author
-description
-keywords
-generator
-revised
-others
-|把 content 属性关联到一个名称。
-scheme|	some_text|	定义用于翻译 content 属性值的格式。
+http-equiv	|content-type expires refresh set-cookie|把 content 属性关联到 HTTP 头部。
+name	| author description keywords generator revised others|把 content 属性关联到一个名称。
+scheme|	some_text|定义用于翻译 content 属性值的格式。
 
