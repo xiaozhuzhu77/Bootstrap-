@@ -17,7 +17,7 @@ http-equiv	|content-type expires refresh set-cookie|把 content 属性关联到 
 name	| author description keywords generator revised others|把 content 属性关联到一个名称。
 scheme|	some_text|定义用于翻译 content 属性值的格式。
 
-##< meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />##
+### < meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />###
 这是个是IE8的专用标记,用来指定IE8浏览器去模拟某个特定版本的IE浏览器的渲染方式（比如人见人烦的IE6），以此来解决部分兼容问题，例如模拟IE7的具体方式如下：
 < meta http-equiv = "X-UA-Compatible" content = "IE=EmulateIE7" />
 但令我好奇的是，此处这个标记后面竟然出现了chrome这样的值，难道IE也可以模拟chrome了？
@@ -32,9 +32,9 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 标记用法：
 
 1.最基本的用法：在页面的头部加入:
-
+```
 < meta http-equiv = "X-UA-Compatible" content = "chrome=1" >
-
+```
 用以声明当前页面用chrome内核来渲染。
 复杂一些的就是本文一开始看到的那中用法：
 
