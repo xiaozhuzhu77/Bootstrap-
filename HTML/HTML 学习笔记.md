@@ -38,8 +38,9 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 用以声明当前页面用chrome内核来渲染。
 复杂一些的就是本文一开始看到的那中用法：
 
+```
 < meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
-
+```
 
 这样写可以达到的效果是如果安装了GCF，则使用GCF来渲染页面，如果为安装GCF，则使用最高版本的IE内核进行渲染。
 
@@ -48,15 +49,16 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 在HTTP的头文件中加入以下信息：X-UA-Compatible: chrome=1
 在Apache服务器中，确保 mod_headers 和 mod_setenvif文件可用，然后在httpd.conf中加入以下配置信息：
 
+```
 1. < IfModule mod_setenvif.c>
 2. < IfModule mod_headers.c>
 3. BrowserMatch chromeframe gcf
 4. 4Header append X-UA-Compatible "chrome=1" env=gcf
 5. </ IfModule >
 6. </ IfModule >
-
+```
 在IIS7或者更高版本的服务器中，只需要修改web.config文件,添加如下信息即可即可:
-
+```
 1. < configuration >
 2. < system.webServer >
 3. < httpProtocol >
@@ -66,10 +68,10 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 7. </ httpProtocol >
 8. </ system.webServer >
 9. </ configuration >
-
+```
 Http-equiv 参考链接：http://kinglyhum.iteye.com/blog/827807
 
 
 
-## IE8需要配合 Response.js 来实现响应式（即实现对媒体查询的支持）##
+### IE8需要配合 Response.js 来实现响应式（即实现对媒体查询的支持）###
 
