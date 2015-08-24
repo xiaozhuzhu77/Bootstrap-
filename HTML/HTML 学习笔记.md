@@ -31,10 +31,10 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 
 标记用法：
 
-1.最基本的用法：在页面的头部加入
-```
+1.最基本的用法：在页面的头部加入:
+
 < meta http-equiv = "X-UA-Compatible" content = "chrome=1" >
-```
+
 用以声明当前页面用chrome内核来渲染。
 复杂一些的就是本文一开始看到的那中用法：
 
@@ -42,7 +42,9 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 
 
 这样写可以达到的效果是如果安装了GCF，则使用GCF来渲染页面，如果为安装GCF，则使用最高版本的IE内核进行渲染。
+
 2.通过修改HTTP头文件的方法来实现让指定的页面使用GCF内核进行渲染：
+
 在HTTP的头文件中加入以下信息：X-UA-Compatible: chrome=1
 在Apache服务器中，确保 mod_headers 和 mod_setenvif文件可用，然后在httpd.conf中加入以下配置信息：
 
