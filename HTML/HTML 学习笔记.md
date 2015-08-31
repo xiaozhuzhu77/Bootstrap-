@@ -41,7 +41,11 @@ GCF下载地址: http://code.google.com/intl/zh-CN/chrome/chromeframe/
 ```
 < meta http-equiv = "X-UA-Compatible" content = "IE=edge,chrome=1" />
 ```
+IE 兼容模式:
 
+```
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+```
 这样写可以达到的效果是如果安装了GCF，则使用GCF来渲染页面，如果为安装GCF，则使用最高版本的IE内核进行渲染。
 
 2.通过修改HTTP头文件的方法来实现让指定的页面使用GCF内核进行渲染：
